@@ -39,7 +39,20 @@ This will limit a maximum of 10% total bandwidth usage on the switchport, and if
 
 
 
+## Conclusion
+
+In this lab I was able to explore many different topics and learn various skills including:
+- Google Cloud Compute Engine basics
+- Docker engine / Containerization
+- Dynamips / Router emulation
+- Scapy library (Python)
+- GNS3
+- Routing and Switching fundamentals
+- Basic DHCP Configuration and Security
+
+
 
 
 ## Sources used 
 https://www.cisco.com/c/en/us/td/docs/switches/lan/csbss/CBS220/CLI-Guide/b_220CLI/ip_dhcp_snooping_commands.pdf
+https://www.cisco.com/c/en/us/td/docs/routers/nfvis/switch_command/b-nfvis-switch-command-reference/m-storm-control-commands.pdf
