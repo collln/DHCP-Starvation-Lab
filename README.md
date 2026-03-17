@@ -1,4 +1,4 @@
-# DHCP-yersinia-lab
+# DHCP-Starvation-Lab
 This repo will hold all of the materials related to my DHCP Starvation lab using yersinia
 
 # Introduction
