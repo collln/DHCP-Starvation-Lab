@@ -21,6 +21,8 @@ DHCP Starvation is a type of Denial of Service attack where an attacker gains ac
 Once the DHCP pool is filled, it makes it impossible for other devices who do not yet have an IP address to obtain one, and communicate over the network. It also makes it very hard to diagnose the issue, as it is very hard to stop the attack once it has started. When initiating the attack in my lab, I was unable to use any of the DHCP commands in the Cisco CLI as the router was being overwhelmed with the massive amount of packets being flooded to it.
 <img width="2720" height="1840" alt="image" src="https://github.com/user-attachments/assets/9b5d7567-5e8d-437b-a297-3c09b94af3db" />
 
+<img width="960" height="767" alt="image" src="https://github.com/user-attachments/assets/7c63b054-7c36-45e4-a541-d378b8021ce2" />
+As shown in the photo above, each DHCP Discover packet has a different randomized MAC address. This is what allows the DHCP Pool to fill up, as if the packet had the same MAC address for each Discover, the DHCP server would just ignore the request (as it is already in the table)
 
 ## Protection / Prevention
 In order to protect against the DHCP Starvation attack, I have implemented storm-control on my switch. This will make it so if a device exceeds 10% of the ports total bandwidth, it will shut the port down. 
