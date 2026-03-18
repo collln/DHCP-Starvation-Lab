@@ -22,6 +22,7 @@ Once the DHCP pool is filled, it makes it impossible for other devices who do no
 <img width="2720" height="1840" alt="image" src="https://github.com/user-attachments/assets/9b5d7567-5e8d-437b-a297-3c09b94af3db" />
 
 <img width="960" height="767" alt="image" src="https://github.com/user-attachments/assets/7c63b054-7c36-45e4-a541-d378b8021ce2" />
+
 As shown in the photo above, each DHCP Discover packet has a different randomized MAC address. This is what allows the DHCP Pool to fill up, as if the packet had the same MAC address for each Discover, the DHCP server would just ignore the request (as it is already in the table)
 
 ## Protection / Prevention
